@@ -261,6 +261,15 @@ module HassRequests
       target: { entity_id: entity_id }
     )
   end
+
+  def climate_set_fan_mode(entity_id, mode)
+    send_data(
+      type: :call_service, domain: :climate, service: :set_fan_mode,
+      service_data: { fan_mode: mode },
+      target: { entity_id: entity_id }
+    )
+  end
+
 end
 
 def remote_on(entity_id)
