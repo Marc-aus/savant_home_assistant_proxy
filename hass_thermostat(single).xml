@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="racepoint_component_profile.xsd" manufacturer="hass" model="thermostat(single)" device_class="HVAC_controller" minimum_component_engine_version="8.5" rpm_xml_version="1.07" rpm_xml_version_date="$Date$" alias="Hass Thermostat">
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="racepoint_component_profile.xsd" manufacturer="hass" model="thermostat(single)" device_class="HVAC_controller" minimum_component_engine_version="8.5" rpm_xml_version="1.10" rpm_xml_version_date="$Date$" alias="Hass Thermostat">
   <notes>
     Ver 1.2 - MW: Added HVAC fan speed control plus feedback, Auto is Auto, "ON" speed level is 'medium' by default, but can be changed in blueprint by modifying [Fan_on_level] state variable 
   </notes>
