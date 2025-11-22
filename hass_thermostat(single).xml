@@ -26,7 +26,7 @@
   <state_variable_list>
 
     <state_variable name="subscribe_all_events" owning_logical_component="Home Assistant" state_center_type="string" user_editable="yes">NO</state_variable>
-    <state_variable name="state_filter" owning_logical_component="Home Assistant" state_center_type="string" state_center_binding="state_filter" user_editable="yes">temperature,current_temperature,preset_mode,state</state_variable>
+    <state_variable name="state_filter" owning_logical_component="Home Assistant" state_center_type="string" state_center_binding="state_filter" user_editable="yes">temperature,current_temperature,preset_mode,state,fan_mode</state_variable>
     <state_variable name="HassEntityArray" owning_logical_component="Home Assistant" state_center_type="string" state_center_binding="HassEntityArray"></state_variable>
     <state_variable name="fan_on_level" owning_logical_component="HVAC_controller" state_center_type="string" user_editable="yes" state_center_binding="fan_on_level" receive_updates_from_state_center="yes" note="Savant HVAC page FAN ON-button resutant fan speed, eg low, medium, high ">medium</state_variable>
 
