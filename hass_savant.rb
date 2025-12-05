@@ -122,7 +122,7 @@ module HassRequests
     )
   end
 
-  def fan_off(entity_id, _speed)
+  def fan_off(entity_id)
     send_data(
       type: :call_service, domain: :fan, service: :turn_off,
       target: { entity_id: entity_id }
