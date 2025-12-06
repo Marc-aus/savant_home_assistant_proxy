@@ -389,7 +389,7 @@ class Hass
         else
           p([:debug, :savant_disconnected])
           @client.close
-          break
+          exit
         end
       end
     end
