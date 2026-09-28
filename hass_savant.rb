@@ -146,6 +146,20 @@ module HassRequests
       target: { entity_id: entity_id }
     )
   end
+    def light_on(entity_id)
+    send_data(
+      type: :call_service, domain: :light, service: :turn_on,
+      target: { entity_id: entity_id }
+    )
+  end
+
+  def light_off(entity_id)
+    send_data(
+      type: :call_service, domain: :light, service: :turn_off,
+      target: { entity_id: entity_id }
+    )
+  end
+
 
   def dimmer_on(entity_id, level)
     send_data(
