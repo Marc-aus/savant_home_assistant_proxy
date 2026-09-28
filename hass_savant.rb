@@ -135,14 +135,14 @@ module HassRequests
 
   def switch_on(entity_id)
     send_data(
-      type: :call_service, domain: :light, service: :turn_on,
+      type: :call_service, domain: :switch, service: :turn_on,
       target: { entity_id: entity_id }
     )
   end
 
   def switch_off(entity_id)
     send_data(
-      type: :call_service, domain: :light, service: :turn_off,
+      type: :call_service, domain: :switch, service: :turn_off,
       target: { entity_id: entity_id }
     )
   end
