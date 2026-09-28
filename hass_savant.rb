@@ -142,14 +142,14 @@ module HassRequests
 
   def switch_off(entity_id)
     send_data(
-      type: :call_service, domain: :light, service: :turn_off,
+      type: :call_service, domain: :switch, service: :turn_off,
       target: { entity_id: entity_id }
     )
   end
 
   def dimmer_on(entity_id, level)
     send_data(
-      type: :call_service, domain: :light, service: :turn_on,
+      type: :call_service, domain: :switch, service: :turn_on,
       service_data: { brightness_pct: level },
       target: { entity_id: entity_id }
     )
