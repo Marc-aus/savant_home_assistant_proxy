@@ -284,8 +284,6 @@ module HassRequests
     )
   end
 
-end
-
 def remote_on(entity_id)
   send_data(
     type: :call_service, domain: :remote, service: :turn_on,
