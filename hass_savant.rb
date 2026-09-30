@@ -327,7 +327,7 @@ def mediaplayer_send_command(entity_id)
     target: { entity_id: entity_id }
   )
 end
-
+end
 class Hass
   include HassMessageParsingMethods
   include HassRequests
